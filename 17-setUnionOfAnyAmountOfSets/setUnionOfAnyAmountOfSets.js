@@ -1,11 +1,14 @@
 function setUnionOfAnyAmountOfSets(...args) {
-  let product = 1; //intilize to 1 
-
-  for(var i = 0; i < args.length; i++){
-    product *= args[i]; //multiply args
+  let setUnion = new Set(); //declare empty set
+  
+  for(let i = 0; i < args.length; i ++){
+    //iterates through arguments
+    for(let z of args[i]){
+      //appends values to set
+      setUnion.add(z);
+    }
   }
-  //console.log(product);
-  return product;
+  return unionSet; 
 }
 
 // Do not edit this line;
